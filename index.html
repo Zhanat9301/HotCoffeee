@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>HotCoffee</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -15,44 +17,88 @@
                     HotCoffee
                 </h2>
                 <label for="search" class="header__label">
-                    <img src="./assets/img/header/header/search-icon.svg" alt="search" class="header__search--icon">
-                    <input aria-placeholder="Search..."  id="search"  type="text" class="header__search--input">
+                    <img src="./assets/img/header/search-icon.svg" alt="search" class="header__search--icon">
+                    <input aria-placeholder="Search..." id="search" type="text" class="header__search--input">
                 </label>
                 <ul class="header__list">
-                    <li class="hedaer__item">
+                    <li class="header__item">
                         <a href="#" class="header__link">
                             Home
                         </a>
                     </li>
-                    
-                        <li class="hedaer__item">
+
+                    <li class="header__item">
+                        <a href="#" class="header__link">
+                            Articles
+                        </a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="#" class="header__link">
+                            <img src="./assets/img/header/inst.svg" alt="inst" class="header__icon">
+                        </a>
+                    </li>
+
+                    <li class="header__item">
+                        <a href="#" class="header__link">
+                            <img src="./assets/img/header/twitter.svg" alt="twitter" class="header__icon">
+
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">
+                            <img src="./assets/img/header/linkedin.svg" alt="linkedin" class="header__icon">
+
+                        </a>
+                    </li>
+                </ul>
+                <div class="burger active">
+                    <div class="burger__menu">
+                        <div class="burger__line"></div>
+                        <div class="burger__line"></div>
+                        <div class="burger__line"></div>
+                        <div class="burger__close">
+                            x
+                        </div>
+                    </div>
+                    <ul class="burger__list">
+
+                        <li class="header__item">
+                            <a href="#" class="header__link">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="header__item">
                             <a href="#" class="header__link">
                                 Articles
                             </a>
                         </li>
-                       
-                            <li class="hedaer__item">
-                                <a href="#" class="header__link">
-                                    <img src="./assets/img/header/header/inst.svg" alt="inst" class="header__icon">
-                                </a>
-                            </li>
-                            
-                                <li class="hedaer__item">
-                                    <a href="#" class="header__link">
-                                        <img src="./assets/img/header/header/twitter.svg" alt="twitter" class="header__icon">
-            
-                                    </a>
-                                </li>
-                                 <li class="hedaer__item">
-                                        <a href="#" class="header__link">
-                                            <img src="./assets/img/header/header/linkedin.svg" alt="linkedin" class="header__icon">
-                
-                                        </a>
-                                </li>
-                </ul>
+
+                        <li class="header__item">
+                            <a href="#" class="header__link">
+                                <img src="./assets/img/header/inst.svg" alt="inst" class="header__icon">
+                            </a>
+                        </li>
+
+                        <li class="header__item">
+                            <a href="#" class="header__link">
+                                <img src="./assets/img/header/twitter.svg" alt="twitter" class="header__icon">
+
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">
+                                <img src="./assets/img/header/linkedin.svg" alt="linkedin" class="header__icon">
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
-    
+    <script src="./js/burger.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,6 @@
 .header{
+    padding-top: 36px;
+    padding-bottom: 25px;
     &__content{
         display: flex;
         justify-content: center;
@@ -23,9 +25,77 @@
         margin-left: 30px;
     }
     &__logo{
-        @include font(700,20px,#000000);
+        @include font(Inter,700,20px,#000000);
     }
     &__link{
-        @include font(700,14px,#000000);
+        @include font(Inter,700,14px,#000000);
     }
+}
+ 
+
+
+.burger{
+    display: none;
+    &__line{
+        width: 30px;
+        height: 5px;
+        background: #000;
+        margin: 3px 0;
+    }
+
+    &__menu{
+        position: absolute;
+        right: 40px;
+    }
+
+    &__list{
+        padding: 40px 0;
+        width: 50vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        background: white;
+        display: none;
+
+    }
+
+    &__close{
+        display: none;
+    }
+
+    &.active &__close{
+        font-size: 25px;
+        font-weight: 900;
+        display: block;
+    }
+
+    &.active &__list{
+        display: flex;
+    }
+
+    &.active &__line{
+        display: none;
+    }
+}
+
+
+
+
+
+@media screen and(max-width:640px) {
+    .header{
+        &__label{
+            display: none;
+        }
+        &__list{
+            display: none;
+        }
+    }
+
+    .burger{
+        display: block;
+    }
+    
 }

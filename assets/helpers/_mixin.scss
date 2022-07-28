@@ -1,6 +1,6 @@
-@mixin font($gulzhanat,$karina,$bema) {
+@mixin font($Inter,$gulzhanat,$karina,$bema) {
     
-    
+    font-family: $Inter;
     font-weight:$gulzhanat ;
     font-size:$karina ;
     color: $bema;
